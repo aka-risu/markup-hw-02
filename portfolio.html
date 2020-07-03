@@ -39,15 +39,15 @@
       <!-- Email and phone -->
       <address class="header-contacts">
         <ul class="header-contacts-list">
-          <li>
+          <li class="header-contacts-list-item">
             <a
-              class="header-contacts-list-item"
+              class="header-contacts-list-item-link"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="header-contacts-list-item" href="tel:+380961111111"
+          <li class="header-contacts-list-item">
+            <a class="header-contacts-list-item-link" href="tel:+380961111111"
               >+380961111111</a
             >
           </li>
@@ -222,45 +222,54 @@
       </a>
       <address class="contacts-footer">
         <ul class="contacts-footer-list">
-          <li>
-            <a class="contacts-footer-list-address" href=""
+          <li class="contacts-footer-list-item">
+            <a class="contacts-footer-list-item-address" href=""
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li>
+          <li class="contacts-footer-list-item">
             <a
-              class="contacts-footer-list-link"
+              class="contacts-footer-list-item-link"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="contacts-footer-list-link" href="tel:+380961111111"
+          <li class="contacts-footer-list-item">
+            <a class="contacts-footer-list-item-link" href="tel:+380961111111"
               >+380961111111</a
             >
           </li>
         </ul>
       </address>
 
-      <div>
-        <b class="call-to-action">Присоединяйтесь</b>
-        <ul>
-          <li><a href="" aria-label="Instagram"></a></li>
-          <li><a href="" aria-label="Twitter"></a></li>
-          <li><a href="" aria-label="facebook"></a></li>
-          <li><a href="" aria-label="Linkedin"></a></li>
+      <div class="call-to-action-join">
+        <b class="call-to-action-join-text">Присоединяйтесь</b>
+        <ul class="call-to-action-join-social-list">
+          <li class="join-social-list-item">
+            <a href="" aria-label="Instagram"></a>
+          </li>
+          <li class="join-social-list-item">
+            <a href="" aria-label="Twitter"></a>
+          </li>
+          <li class="join-social-list-item">
+            <a href="" aria-label="facebook"></a>
+          </li>
+          <li class="join-social-list-item">
+            <a href="" aria-label="Linkedin"></a>
+          </li>
         </ul>
       </div>
-
-      <b class="call-to-action">Подпишитесь на рассылку</b>
-      <form class="form" action="#">
-        <input class="form-email" type="email" value="E-mail" />
-        <input
-          class="button subscribe-button"
-          type="submit"
-          value="Подписаться"
-        />
-      </form>
+      <div class="call-to-action-subscribe">
+        <b class="call-to-action-subscribe-text">Подпишитесь на рассылку</b>
+        <form class="form" action="#">
+          <input class="form-email" type="email" value="E-mail" />
+          <input
+            class="button subscribe-button"
+            type="submit"
+            value="Подписаться"
+          />
+        </form>
+      </div>
     </footer>
   </body>
 </html>

@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -32,14 +32,14 @@ ul {
 }
 .header-navigation-list .header-navigation-list-link:hover,
 .header-navigation-list .header-navigation-list-link:focus,
-.header-contacts-list .header-contacts-list-item:hover,
-.header-contacts-list .header-contacts-list-item:focus,
+.header-contacts-list-item .header-contacts-list-item-link:hover,
+.header-contacts-list-item .header-contacts-list-item-link:focus,
 .button:hover,
 .button:focus,
-.contacts-footer-list .contacts-footer-list-link:hover,
-.contacts-footer-list .contacts-footer-list-link:focus,
-.contacts-footer-list .contacts-footer-list-address:hover,
-.contacts-footer-list .contacts-footer-list-address:hover,
+.contacts-footer-list-item .contacts-footer-list-item-link:hover,
+.contacts-footer-list-item .contacts-footer-list-item-link:focus,
+.contacts-footer-list-item .contacts-footer-list-item-address:hover,
+.contacts-footer-list-item .contacts-footer-list-item-address:hover,
 .form .form-email:focus {
   color: var(--accent-color-blue);
 }
@@ -61,7 +61,7 @@ ul {
   color: var(--background-color-white);
 }
 .header-navigation-list-link,
-.header-contacts-list-item {
+.header-contacts-list-item-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -70,7 +70,7 @@ ul {
 .header-navigation-current {
   color: var(--accent-color-blue);
 }
-.header-contacts-list .header-contacts-list-item {
+.header-contacts-list-item .header-contacts-list-item-link {
   color: var(--main-color-grey);
 }
 
@@ -107,22 +107,23 @@ ul {
   color: var(--headline-color-black);
 }
 
-.advantages-list .advantages-list-headline,
-.what-we-do-list .what-we-do-list-headline,
-.call-to-action {
+.advantages-list-item .advantages-list-item-headline,
+.what-we-do-list-item .what-we-do-list-item-headline,
+.call-to-action-join-text,
+.call-to-action-subscribe-text {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.advantages-list .advantages-list-headline {
+.advantages-list-item .advantages-list-item-headline {
   color: var(--headline-color-black);
 }
-.what-we-do-list .what-we-do-list-headline {
+.what-we-do-list-item .what-we-do-list-item-headline {
   text-align: center;
   color: var(--background-color-white);
 }
-.team-list .team-list-headline-name,
-.team-list .team-list-text {
+.team-list-item .team-list-item-headline-name,
+.team-list-item .team-list-item-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -131,21 +132,22 @@ ul {
 .team {
   background: var(--background-grey);
 }
-.team-list .team-list-headline-name {
+.team-list-item .team-list-item-headline-name {
   font-weight: 500;
   color: var(--headline-color-black);
 }
 .footer {
   background-color: var(--background-footer);
 }
-.contacts-footer-list .contacts-footer-list-link {
+.contacts-footer-list-item .contacts-footer-list-item-link {
   color: var(--color-white-transparent);
 }
 
-.contacts-footer-list .contacts-footer-list-address {
+.contacts-footer-list-item .contacts-footer-list-item-address {
   color: var(--background-color-white);
 }
-.call-to-action {
+.call-to-action-join-text,
+.call-to-action-subscribe-text {
   color: var(--background-color-white);
 }
 .form-email {
