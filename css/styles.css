@@ -5,7 +5,7 @@
   --navigation-color: #212121;
   --main-color-grey: #757575;
   --background-grey: #f5f4fa;
-  --background-color-white: #ffffff;
+  --light-button-background: #ffffff;
   --text-dark-background: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, 0.6);
   --background-footer: #2f303a;
@@ -29,18 +29,21 @@ body {
 .list {
   list-style: none;
 }
-.header-navigation-list .header-navigation-list-link:hover,
-.header-navigation-list .header-navigation-list-link:focus,
+.header-navigation-list-item .header-navigation-list-item-link:hover,
+.header-navigation-list-item .header-navigation-list-item-link:focus,
 .header-contacts-list-item .header-contacts-list-item-link:hover,
 .header-contacts-list-item .header-contacts-list-item-link:focus,
-.button:hover,
-.button:focus,
 .contacts-footer-list-item .contacts-footer-list-item-link:hover,
 .contacts-footer-list-item .contacts-footer-list-item-link:focus,
 .contacts-footer-list-item .contacts-footer-list-item-address:hover,
 .contacts-footer-list-item .contacts-footer-list-item-address:hover,
 .form .form-email:focus {
   color: var(--accent-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--light-button-background);
 }
 .logo:focus {
   color: none;
@@ -53,11 +56,11 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.logo-web {
+.logo .logo-web {
   color: #2196f3;
 }
 
-.header-navigation-list-link,
+.header-navigation-list-item-link,
 .header-contacts-list-item-link {
   font-weight: 500;
   line-height: 1.14;
@@ -95,6 +98,7 @@ body {
 
   border: none;
 }
+
 .section-headline {
   font-weight: 700;
   font-size: 36px;
@@ -162,20 +166,20 @@ body {
 .logo.logo-footer {
   color: #ffffff;
 }
-.portfolio-list-item .portfolio-list-item-headline {
+.portfolio-list-item-link .portfolio-list-item-link-headline {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--headline-color-black);
 }
-.portfolio-list-item .portfolio-list-item-text {
+.portfolio-list-item-link .portfolio-list-item-link-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--main-color-grey);
 }
-.portfolio-list-item .portfolio-list-item-description {
+.portfolio-list-item-link .portfolio-list-item-link-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -198,7 +202,12 @@ body {
   background: var(--accent-color);
 }
 .portfolio-button-secondary {
-  background: var(--background-color-white);
+  background: var(--light-button-backround);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--text-dark-background);
+  background: var(--accent-color);
 }
 /* .header-img {
   background: url(img/Headerimg.png);
