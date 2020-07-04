@@ -74,7 +74,7 @@ body {
 .header-navigation .header-navigation-current {
   color: var(--accent-color);
 }
-.header-contacts-list-item .header-contacts-list-item-link {
+.header-contacts-list-item-link {
   color: var(--text-main-color);
 }
 
@@ -167,6 +167,7 @@ body {
   line-height: 1.25;
   display: flex;
   align-items: center;
+
   color: var(--color-white-transparent);
   background: var(--background-footer);
 }
