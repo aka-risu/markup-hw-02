@@ -1,19 +1,18 @@
-* {
-  /* padding: 0;
-  margin: 0; */
-}
 :root {
-  --accent-color-blue: #2196f3;
+  --main-font: "Roboto", sans-serif;
+  --accent-color: #2196f3;
   --headline-color-black: #212121;
+  --navigation-color: #212121;
   --main-color-grey: #757575;
   --background-grey: #f5f4fa;
   --background-color-white: #ffffff;
+  --text-dark-background: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, 0.6);
   --background-footer: #2f303a;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -22,12 +21,12 @@ body {
   background: bisque;
 }
 
-a {
+.link {
   text-decoration: none;
   font-style: normal;
 }
 
-ul {
+.list {
   list-style: none;
 }
 .header-navigation-list .header-navigation-list-link:hover,
@@ -41,7 +40,7 @@ ul {
 .contacts-footer-list-item .contacts-footer-list-item-address:hover,
 .contacts-footer-list-item .contacts-footer-list-item-address:hover,
 .form .form-email:focus {
-  color: var(--accent-color-blue);
+  color: var(--accent-color);
 }
 .logo:focus {
   color: none;
@@ -52,23 +51,21 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--headline-color-black);
+  color: #212121;
 }
 .logo-web {
-  color: var(--accent-color-blue);
+  color: #2196f3;
 }
-.logo-footer {
-  color: var(--background-color-white);
-}
+
 .header-navigation-list-link,
 .header-contacts-list-item-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--headline-color-black);
+  color: var(--navigation-color);
 }
 .header-navigation-current {
-  color: var(--accent-color-blue);
+  color: var(--accent-color);
 }
 .header-contacts-list-item .header-contacts-list-item-link {
   color: var(--main-color-grey);
@@ -81,12 +78,12 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--background-color-white);
+  color: var(--text-dark-background);
 }
 .button {
   width: 200px;
   height: 50px;
-  background-color: var(--accent-color-blue);
+  background-color: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
@@ -94,7 +91,7 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--background-color-white);
+  color: var(--text-dark-background);
 
   border: none;
 }
@@ -120,7 +117,7 @@ ul {
 }
 .what-we-do-list-item .what-we-do-list-item-headline {
   text-align: center;
-  color: var(--background-color-white);
+  color: var(--text-dark-background);
 }
 .team-list-item .team-list-item-headline-name,
 .team-list-item .team-list-item-text {
@@ -144,11 +141,11 @@ ul {
 }
 
 .contacts-footer-list-item .contacts-footer-list-item-address {
-  color: var(--background-color-white);
+  color: var(--text-dark-background);
 }
 .call-to-action-join-text,
 .call-to-action-subscribe-text {
-  color: var(--background-color-white);
+  color: var(--text-dark-background);
 }
 .form-email {
   font-size: 16px;
@@ -162,7 +159,9 @@ ul {
 }
 
 /* Portfolio */
-
+.logo.logo-footer {
+  color: #ffffff;
+}
 .portfolio-list-item .portfolio-list-item-headline {
   font-weight: 700;
   font-size: 18px;
@@ -180,7 +179,7 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  color: var(--background-color-white);
+  color: var(--text-dark-background);
 }
 /* Portfolio button */
 .portfolio-button {
@@ -195,8 +194,8 @@ ul {
   color: var(--headline-color-black);
 }
 .portfolio-button-primary {
-  color: var(--background-color-white);
-  background: var(--accent-color-blue);
+  color: var(--text-dark-background);
+  background: var(--accent-color);
 }
 .portfolio-button-secondary {
   background: var(--background-color-white);
