@@ -1,10 +1,11 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --accent-color: #2196f3;
-  --headline-color-black: #212121;
+  --headline-color: #212121;
   --navigation-color: #212121;
-  --main-color-grey: #757575;
-  --background-grey: #f5f4fa;
+  --text-main-color: #757575;
+  --secondary-background: #f5f4fa;
+  --primary-background: #ffffff;
   --light-button-background: #ffffff;
   --text-dark-background: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, 0.6);
@@ -17,7 +18,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-color-grey);
+  color: var(--text-main-color);
   background: bisque;
 }
 
@@ -71,7 +72,7 @@ body {
   color: var(--accent-color);
 }
 .header-contacts-list-item .header-contacts-list-item-link {
-  color: var(--main-color-grey);
+  color: var(--text-main-color);
 }
 
 .hero-text {
@@ -105,7 +106,7 @@ body {
   line-height: 1.17;
   text-align: center;
 
-  color: var(--headline-color-black);
+  color: var(--headline-color);
 }
 
 .advantages-list-item .advantages-list-item-headline,
@@ -116,8 +117,11 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.hidden {
+  display: none;
+}
 .advantages-list-item .advantages-list-item-headline {
-  color: var(--headline-color-black);
+  color: var(--headline-color);
 }
 .what-we-do-list-item .what-we-do-list-item-headline {
   text-align: center;
@@ -131,11 +135,11 @@ body {
   text-align: center;
 }
 .team {
-  background: var(--background-grey);
+  background: var(--secondary-background);
 }
 .team-list-item .team-list-item-headline-name {
   font-weight: 500;
-  color: var(--headline-color-black);
+  color: var(--headline-color);
 }
 .footer {
   background-color: var(--background-footer);
@@ -171,13 +175,13 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--headline-color-black);
+  color: var(--headline-color);
 }
 .portfolio-list-item-link .portfolio-list-item-link-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--main-color-grey);
+  color: var(--text-main-color);
 }
 .portfolio-list-item-link .portfolio-list-item-link-description {
   font-weight: 400;
@@ -195,7 +199,7 @@ body {
   letter-spacing: 0.03em;
 
   border: none;
-  color: var(--headline-color-black);
+  color: var(--headline-color);
 }
 .portfolio-button-primary {
   color: var(--text-dark-background);
