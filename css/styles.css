@@ -21,24 +21,28 @@ body {
   color: var(--text-main-color);
   background: bisque;
 }
-
+/* Utility classes */
 .link {
   text-decoration: none;
   font-style: normal;
 }
-
 .list {
   list-style: none;
 }
-.header-navigation-list-item .header-navigation-list-item-link:hover,
-.header-navigation-list-item .header-navigation-list-item-link:focus,
-.header-contacts-list-item .header-contacts-list-item-link:hover,
-.header-contacts-list-item .header-contacts-list-item-link:focus,
-.contacts-footer-list-item .contacts-footer-list-item-link:hover,
-.contacts-footer-list-item .contacts-footer-list-item-link:focus,
-.contacts-footer-list-item .contacts-footer-list-item-address:hover,
-.contacts-footer-list-item .contacts-footer-list-item-address:hover,
-.form .form-email:focus {
+.hidden {
+  display: none;
+}
+
+/* Hover and focus */
+.header-navigation-list-item-link:hover,
+.header-navigation-list-item-link:focus,
+.header-contacts-list-item-link:hover,
+.header-contacts-list-item-link:focus,
+.contacts-footer-list-item-link:hover,
+.contacts-footer-list-item-link:focus,
+.contacts-footer-list-item-address:hover,
+.contacts-footer-list-item-address:focus,
+.form-email:focus {
   color: var(--accent-color);
 }
 .button:hover,
@@ -46,9 +50,8 @@ body {
   color: var(--accent-color);
   background-color: var(--light-button-background);
 }
-.logo:focus {
-  color: none;
-}
+
+/* Header */
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -68,13 +71,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--navigation-color);
 }
-.header-navigation-current {
+.header-navigation .header-navigation-current {
   color: var(--accent-color);
 }
 .header-contacts-list-item .header-contacts-list-item-link {
   color: var(--text-main-color);
 }
 
+/* Hero */
 .hero-text {
   font-weight: 900;
   font-size: 44px;
@@ -84,6 +88,8 @@ body {
   text-transform: uppercase;
   color: var(--text-dark-background);
 }
+
+/* Button */
 .button {
   width: 200px;
   height: 50px;
@@ -100,25 +106,20 @@ body {
   border: none;
 }
 
+/* Sections */
 .section-headline {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
   color: var(--headline-color);
 }
 
-.advantages-list-item .advantages-list-item-headline,
-.what-we-do-list-item .what-we-do-list-item-headline,
-.call-to-action-join-text,
-.call-to-action-subscribe-text {
+.advantages-list-item-headline,
+.what-we-do-list-item-headline {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-}
-.hidden {
-  display: none;
 }
 .advantages-list-item .advantages-list-item-headline {
   color: var(--headline-color);
@@ -127,41 +128,45 @@ body {
   text-align: center;
   color: var(--text-dark-background);
 }
-.team-list-item .team-list-item-headline-name,
-.team-list-item .team-list-item-text {
-  font-weight: 400;
+
+/* Team */
+.team {
+  background: var(--secondary-background);
+}
+.team-list-item-headline-name,
+.team-list-item-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-.team {
-  background: var(--secondary-background);
 }
 .team-list-item .team-list-item-headline-name {
   font-weight: 500;
   color: var(--headline-color);
 }
+
+/* Footer */
 .footer {
   background-color: var(--background-footer);
 }
-.contacts-footer-list-item .contacts-footer-list-item-link {
+.contacts-footer-list-item-link {
   color: var(--color-white-transparent);
 }
 
-.contacts-footer-list-item .contacts-footer-list-item-address {
+.contacts-footer-list-item-address {
   color: var(--text-dark-background);
 }
 .call-to-action-join-text,
 .call-to-action-subscribe-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--text-dark-background);
 }
 .form-email {
   font-size: 16px;
   line-height: 1.25;
-
   display: flex;
   align-items: center;
-
   color: var(--color-white-transparent);
   background: var(--background-footer);
 }
@@ -170,20 +175,20 @@ body {
 .logo.logo-footer {
   color: #ffffff;
 }
-.portfolio-list-item-link .portfolio-list-item-link-headline {
+.portfolio-list-item-link-headline {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--headline-color);
 }
-.portfolio-list-item-link .portfolio-list-item-link-text {
+.portfolio-list-item-link-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--text-main-color);
 }
-.portfolio-list-item-link .portfolio-list-item-link-description {
+.portfolio-list-item-link-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -194,10 +199,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   text-align: center;
   letter-spacing: 0.03em;
-
   border: none;
   color: var(--headline-color);
 }
@@ -208,6 +211,7 @@ body {
 .portfolio-button-secondary {
   background: var(--light-button-backround);
 }
+/* Portfolio hovers */
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--text-dark-background);
